@@ -49,11 +49,11 @@ export default function Footer() {
             <h4 className="font-heading font-semibold text-theme-primary">Get In Touch</h4>
             <div className="space-y-2">
               <a 
-                href="mailto:codykilpatrick1996@gmail.com" 
+                href="mailto:cogworksolutions1@gmail.com" 
                 className="flex items-center gap-2 text-theme-muted hover:text-theme-primary transition-colors"
               >
                 <Mail className="w-4 h-4" style={{ color: 'var(--icon-color)' }} />
-                codykilpatrick1996@gmail.com
+                cogworksolutions1@gmail.com
               </a>
             </div>
           </div>
