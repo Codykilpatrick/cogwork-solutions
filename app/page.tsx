@@ -13,7 +13,8 @@ import {
   MapPin,
   MessageCircle,
   HeartHandshake,
-  Shield
+  Shield,
+  ExternalLink
 } from 'lucide-react'
 
 export default function HomePage() {
@@ -215,6 +216,67 @@ export default function HomePage() {
             <Button href="/contact" variant="secondary">
               Let&apos;s Discuss Your Project
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section 
+        className="section-padding relative"
+        style={{ background: 'linear-gradient(to bottom, var(--bg-secondary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%)' }}
+      >
+        <div className="container-wide">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Projects in the Wild
+            </h2>
+            <p className="text-lg text-theme-muted max-w-2xl mx-auto">
+              Here&apos;s some of what I&apos;ve built for local businesses:
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Summerduck Dragway Dashboard */}
+            <div className="bg-theme-card rounded-xl p-6 border border-theme hover:border-[var(--icon-color)] transition-colors">
+              <h3 className="text-xl font-heading font-semibold mb-3">
+                Summerduck Dragway Dashboard
+              </h3>
+              <p className="text-theme-muted mb-4 leading-relaxed">
+                A racing analytics dashboard for a local dragway. Race results, driver stats, and performance data 
+                were scattered across spreadsheets and paper records—now it&apos;s all in one place.
+              </p>
+              <a 
+                href="https://summerduck-dashboard.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-medium transition-colors hover:opacity-80"
+                style={{ color: 'var(--accent)' }}
+              >
+                View Project
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Blue Ox Enterprises Scheduler */}
+            <div className="bg-theme-card rounded-xl p-6 border border-theme hover:border-[var(--icon-color)] transition-colors">
+              <h3 className="text-xl font-heading font-semibold mb-3">
+                Blue Ox Enterprises Scheduler
+              </h3>
+              <p className="text-theme-muted mb-4 leading-relaxed">
+                A scheduling dashboard for a large landscape services business. Coordinating jobs meant constant texts and 
+                phone calls—this tool puts everyone on the same page with a clear view of what&apos;s scheduled.
+              </p>
+              <a 
+                href="https://blueox.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-medium transition-colors hover:opacity-80"
+                style={{ color: 'var(--accent)' }}
+              >
+                View Project
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
