@@ -235,7 +235,7 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Summerduck Dragway Dashboard */}
             <div className="bg-theme-card rounded-xl p-6 border border-theme hover:border-[var(--icon-color)] transition-colors">
               <h3 className="text-xl font-heading font-semibold mb-3">
@@ -268,6 +268,27 @@ export default function HomePage() {
               </p>
               <a 
                 href="https://blueox.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-medium transition-colors hover:opacity-80"
+                style={{ color: 'var(--accent)' }}
+              >
+                View Project
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Cardinal & Rye Inventory Tracker */}
+            <div className="bg-theme-card rounded-xl p-6 border border-theme hover:border-[var(--icon-color)] transition-colors">
+              <h3 className="text-xl font-heading font-semibold mb-3">
+                Cardinal & Rye Inventory Tracker
+              </h3>
+              <p className="text-theme-muted mb-4 leading-relaxed">
+                An inventory tool for a craft cocktail bar. Tracking bottles and supplies was a mess of paper lists—now 
+                they see what&apos;s in stock, what&apos;s running low, and generate order lists with one click.
+              </p>
+              <a 
+                href="https://cardinal-and-rye.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-medium transition-colors hover:opacity-80"
