@@ -75,7 +75,7 @@ export default function AboutPage() {
             {/* Story */}
             <div className="prose prose-lg max-w-none">
               <p className="text-lg md:text-xl text-theme-muted leading-relaxed mb-6">
-                After leaving Naval service, I spent years building software systems 
+                After leaving the Navy, I spent years building software systems 
                 for demanding, high-stakes environments. The kind of work where things have 
                 to be reliable, efficient, and actually solve the problem at hand.
               </p>
