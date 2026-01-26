@@ -4,8 +4,6 @@ import { useState, FormEvent } from 'react'
 import Button from './Button'
 import { Send, CheckCircle, AlertCircle } from 'lucide-react'
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xvzarkba'
-
 interface FormData {
   name: string
   business: string
@@ -40,7 +38,7 @@ export default function ContactForm() {
     setErrorMessage('')
 
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -54,7 +52,9 @@ export default function ContactForm() {
         }),
       })
 
-      if (response.ok) {
+      const result = await response.json()
+
+      if (result.success) {
         setStatus('success')
         setFormData({
           name: '',
@@ -64,11 +64,15 @@ export default function ContactForm() {
           message: '',
         })
       } else {
-        throw new Error('Form submission failed')
+        throw new Error(result.error || 'Form submission failed')
       }
-    } catch {
+    } catch (error) {
       setStatus('error')
-      setErrorMessage('Something went wrong. Please try again or email directly.')
+      setErrorMessage(
+        error instanceof Error && error.message !== 'Form submission failed'
+          ? error.message
+          : 'Something went wrong. Please try again or email directly.'
+      )
     }
   }
 
