@@ -88,6 +88,24 @@
     background-color: var(--bg-card);
   }
   
+  /* Gradient section backgrounds */
+  .bg-gradient-to-secondary {
+    background: linear-gradient(to bottom, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+  
+  .bg-gradient-to-primary {
+    background: linear-gradient(to bottom, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  }
+  
+  .bg-gradient-primary-secondary-primary {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-primary) 0%,
+      var(--bg-secondary) 50%,
+      var(--bg-primary) 100%
+    );
+  }
+  
   .text-theme-primary {
     color: var(--text-primary);
   }
