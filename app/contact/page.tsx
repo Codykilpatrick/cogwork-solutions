@@ -88,11 +88,11 @@ export default function ContactPage() {
               <div className="text-sm text-theme-muted">
                 <p className="mb-2">Prefer email directly?</p>
                 <a 
-                  href="mailto:cogworksolutions1@gmail.com" 
+                  href="mailto:contact@cogwork-solutions.com" 
                   className="hover:underline"
                   style={{ color: 'var(--icon-color)' }}
                 >
-                  cogworksolutions1@gmail.com
+                  contact@cogwork-solutions.com
                 </a>
               </div>
             </div>

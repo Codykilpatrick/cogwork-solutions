@@ -18,8 +18,8 @@ export async function POST(request: NextRequest) {
 
     // Send the email
     const { error } = await resend.emails.send({
-      from: 'Cogwork Solutions <onboarding@resend.dev>', // Update this once you verify your domain
-      to: ['cogworksolutions1@gmail.com'],
+      from: 'Cogwork Solutions <contact@cogwork-solutions.com>',
+      to: ['contact@cogwork-solutions.com'],
       replyTo: email,
       subject: `New inquiry from ${name} - ${business}`,
       html: `
