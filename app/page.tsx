@@ -284,12 +284,33 @@ export default function HomePage() {
                 Cardinal & Rye Inventory Tracker
               </h3>
               <p className="text-theme-muted mb-4 leading-relaxed">
-                An inventory tool for a craft cocktail bar. Tracking bottles and supplies was a mess of paper lists—now 
+                An inventory tool for a craft cocktail bar. Tracking bottles and supplies was a mess of paper lists—now
                 they see what&apos;s in stock, what&apos;s running low, and generate order lists with one click.
               </p>
-              <a 
-                href="https://cardinal-and-rye.vercel.app/" 
-                target="_blank" 
+              <a
+                href="https://cardinal-and-rye.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-medium transition-colors hover:opacity-80"
+                style={{ color: 'var(--accent)' }}
+              >
+                View Project
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Vivid Nails Booking Platform */}
+            <div className="bg-theme-card rounded-xl p-6 border border-theme hover:border-[var(--icon-color)] transition-colors">
+              <h3 className="text-xl font-heading font-semibold mb-3">
+                Vivid Nails Booking Platform
+              </h3>
+              <p className="text-theme-muted mb-4 leading-relaxed">
+                A full-stack booking and management platform for a nail salon. Appointments were handled by phone and
+                walk-ins—now clients book online and the owner manages schedules, services, and staff from one dashboard.
+              </p>
+              <a
+                href="https://vividnails.vercel.app/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-medium transition-colors hover:opacity-80"
                 style={{ color: 'var(--accent)' }}
